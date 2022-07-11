@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&family=Poppins:wght@200;300;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*NAVBAR*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 35px;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1;
+  transition: 2s;
+  height: 10px;
+  position: fixed;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.active{
+  background-color: black; 
+  transition: 2s;
+  box-shadow: 0px 10px 38px -7px rgba(0,0,0,0.55);
+-webkit-box-shadow: 0px 10px 38px -7px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 10px 38px -7px rgba(0,0,0,0.55);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-logo{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
+.navbar-nav{
+  font-family: 'Poppins', sans-serif;
+}
+.navbar-nav ul{
+  display: flex;
+  list-style: none;
+  
+}
+
+.navbar-nav  a{
+  padding-left: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+/*HEADER*/
+.header-container{
+  background-image: url('/src/media/dog-bg-dark.jpeg');
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.header-text-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 179px;
+}
+
+.header-text h4{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+
+.header-text p{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.header-text button{
+  background-color: rgb(255, 255, 255);
+  padding: 15px 24px 15px 24px;
+  border-radius: 25px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  letter-spacing: 3px;
+  transition: 300ms;
+}
+
+.header-text button:hover{
+  background-color: #9e9e9e;
+  cursor: pointer;
+  transition: 300ms;
+  color: white;
+}
+
+/*ABOUT */
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  
+}
+
+.about-container img{
+
+  margin: 25px;
+}
+
+.about-text h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  
+}
+
+.about-text p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  font-family: 16px;
+  padding-right: 25px;
+  padding-top: 25px;
+
+}
+
